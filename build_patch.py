@@ -214,6 +214,12 @@ STATUS_MESSAGES = {
 WINDOW_MENU = {
     "Enter Full Screen": "进入全屏",
     "Leave Full Screen": "退出全屏",
+    "Automatic macOS Proxy Configuration": "macOS 代理自动配置",
+    "Charles can automatically configure your Network Settings for use with Charles. This requires that you grant privileges to the Charles Proxy Settings application. You only need to do this once. Would you like to do this now?": "Charles 可以自动配置网络设置以供使用。此操作需要授予 Charles Proxy Settings 应用权限，且只需授权一次。现在要授权吗？",
+    "Allow automatic macOS proxy configuration": "允许自动配置 macOS 代理",
+    "Grant Privileges": "授予权限",
+    "Not Yet": "暂不",
+    "Automatic macOS proxy configuration has now been turned off. You can turn this back on in the Proxy Settings in the Proxy menu.": "macOS 代理自动配置已关闭。您可以在“代理”菜单的“代理设置”中重新开启。",
 }
 
 COMPOSE_DIALOG = {
