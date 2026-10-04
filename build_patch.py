@@ -150,29 +150,6 @@ TABLE_FIELDS = {
     "Tags": "标签",
 }
 
-TOOLBAR = {
-    "Structure": "结构",
-    "Sequence": "序列",
-    "Clear": "清空",
-    "Compose": "编写请求…",
-    "Repeat": "重发请求",
-    "Start": "开始",
-    "Stop": "停止",
-    "Start ": "启动 ",
-    "Stop ": "停止 ",
-    "Breakpoints": "断点",
-    "Throttle": "限速",
-    "Proxying": "代理",
-    "Disable": "禁用",
-    "Enable": "启用",
-    "Buy": "购买",
-    "Purchase a License": "购买许可证",
-    "\x01 Recording": "\x01记录",
-    "\x01 SSL Proxying": "\x01 SSL 代理",
-    "\x01 Throttling": "\x01限速",
-    "\x01 Breakpoints": "\x01断点",
-}
-
 TOOLBAR_RECORDING = {
     "Stop": "停止",
     "Start": "开始",
@@ -1697,7 +1674,8 @@ def main() -> None:
         "com/charlesproxy/gui/transaction/actions/SwitchSequenceNavigatorAction.class": SESSION_NAV_SEQUENCE,
         "com/charlesproxy/gui/transaction/actions/SwitchStructureNavigatorAction.class": SESSION_NAV_STRUCTURE,
         "com/charlesproxy/gui/session/tables/TransactionField.class": TABLE_FIELDS,
-        "com/charlesproxy/gui/gbNU.class": TOOLBAR,
+        # Keep gui/gbNU.class unpatched: its strings such as "Record" and
+        # "Structure" are icon resource IDs passed to IconUtils, not labels.
         "com/charlesproxy/gui/qJQT.class": TOOLBAR_RECORDING,
         "com/charlesproxy/gui/WqPB.class": TOOLBAR_SSL,
         "com/charlesproxy/gui/TSYl.class": TOOLBAR_THROTTLE,

@@ -29,4 +29,4 @@
 
 ## 实现说明
 
-5.2.1 使用 `ResourceBundle` 加载 `com.charlesproxy.strings`。本包提供 `strings_zh.properties`，并通过 `JAVA_TOOL_OPTIONS` 把 Java 的 `--patch-module` 参数交给 Charles 内嵌 JVM；少数硬编码的菜单和提示文字通过改写对应 class 文件的常量池覆盖。类文件只在启动本包时从本机安装复制并改写，补丁不包含 Charles 安装包。
+5.2.1 使用 `ResourceBundle` 加载 `com.charlesproxy.strings`。本包提供 `strings_zh.properties`，并通过 `JAVA_TOOL_OPTIONS` 把 Java 的 `--patch-module` 参数交给 Charles 内嵌 JVM；少数硬编码的菜单和提示文字通过改写对应 class 文件的常量池覆盖。作为图标资源 ID 使用的字符串会保留原文，避免汉化后查找不到图标。类文件只在启动本包时从本机安装复制并改写，补丁不包含 Charles 安装包。
